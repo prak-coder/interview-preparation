@@ -24,6 +24,6 @@ JavaScript Revision
     -JavaScript was originally built to run exclusively inside web browsers. If the core  JavaScript  language had native file system I/O capabilities (like Python's open()), visiting a malicious website could allow the site's script to read your private files, delete your operating system, or access your webcam without permission.
    -v8 spidermonkey engines follow ecmascript blind no I/O. browser and node are envi provide apis
     for fs,http and dom.. also they manage Event Loop, Task Queue, and Microtask Queue to handle asynchronous code like setTimeout or fs.readFile.
-
+   -js revision let const var are hoisted,var a is intialized with   undefined ReferenceError is a subclass of Error.
 
 
