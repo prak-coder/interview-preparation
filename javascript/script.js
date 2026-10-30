@@ -44,7 +44,7 @@
 
 //   default:
 //     console.log("not a  day of the week");
-//     break;
+//
 // }
 // rl.close(); // Remember to close the interface!
 
@@ -74,11 +74,42 @@
 //   console.log(e.stack); // Stack of the error
 // }
 
-try {
-  console.log(a);
-  const a = 10;
-  // let a = undefinedVariable;
-} catch (err) {
-  console.log(err.name);
-  console.log(err.message);
+// try {
+//   console.log(a);
+//   const a = 10;
+//   // let a = undefinedVariable;
+// } catch (err) {
+//   console.log(err.name);
+//   console.log(err.message);
+// }
+
+// const time = "10pm";
+// switch (time) {
+//   case "6am":
+//     console.log("good morning");
+//     break;
+//   case "12pm":
+//     console.log("good afternoon");
+//     break;
+//   case "6pm":
+//     console.log("good evening");
+//     break;
+//   case "10pm":
+//     console.log("good night");
+//     break;
+//   default:
+//     console.log("Invalid time");
+// }
+// time = new Date().toLocaleTimeString();
+// console.log(`The time is ${time}`);
+"use strict";
+let hasdriversLicense = true;
+let hasGoodVision = false;
+const passeyeTest = true;
+hasGoodVison = true;
+if (hasdriversLicense && hasGoodVision) {
+  console.log("You can drive!");
+} else {
+  console.log("You cannot drive.");
 }
+const interface = "21";
