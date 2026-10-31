@@ -30,5 +30,6 @@ JavaScript Revision
    -terenary operator condition ? expressionIfTrue : expressionIfFalse
 fundamentals 2
    -'use strict' warns uncaught ReferenceError and reserved key word
+   -use Date.now() for clock or stop watch with setinterval bcs of how js executes bts single thread nature and browser envir browser sleep mode/load big image
 
 

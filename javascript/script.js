@@ -102,7 +102,8 @@
 // }
 // time = new Date().toLocaleTimeString();
 // console.log(`The time is ${time}`);
-"use strict";
+
+/*"use strict";
 let hasdriversLicense = true;
 let hasGoodVision = false;
 const passeyeTest = true;
@@ -112,4 +113,27 @@ if (hasdriversLicense && hasGoodVision) {
 } else {
   console.log("You cannot drive.");
 }
-const interface = "21";
+const interface = "21";*/
+
+let h = document.querySelector(".hour");
+let m = document.querySelector(".minute");
+let s = document.querySelector(".second");
+
+let startTime = Date.now();
+function stopwatch() {
+  let elapsedTime = Date.now() - startTime;
+
+  elapsedTime = Date.now() - startTime;
+  let hours = Math.floor(elapsedTime / (1000 * 60 * 60));
+  let minutes = Math.floor((elapsedTime / (1000 * 60)) % 60);
+  let seconds = Math.floor((elapsedTime / 1000) % 60);
+  h.innerHTML = hours;
+  m.innerHTML = minutes;
+  s.innerHTML = seconds;
+
+  // console.log(`${hours}:${minutes}:${seconds}`);
+}
+
+let timerID = setInterval(stopwatch, 1000);
+const stop = document.querySelector(".stop");
+stop.addEventListener("click", () => clearInterval(timerID));
