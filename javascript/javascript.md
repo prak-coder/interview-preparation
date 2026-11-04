@@ -32,5 +32,7 @@ fundamentals 2
    -'use strict' warns uncaught ReferenceError and reserved key word
    -continue and break are key words in loops break breaks the loop continue the loop
    -use Date.now() for clock or stop watch with setinterval bcs of how js executes bts single thread nature and browser envir browser sleep mode/load big image
-
+   -expression computes to a value. statement dont change value but alters the state of the program.
+   control structures like if for are statement variable dec and assignment are also statements
+  -arrow func => seperates parameters and body of func mostly used when func(unnamed) are passed as argu to other func eg [1,2,3].map((val) => val *2)
 

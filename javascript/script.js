@@ -115,7 +115,7 @@ if (hasdriversLicense && hasGoodVision) {
 }
 const interface = "21";*/
 
-let h = document.querySelector(".hour");
+/*let h = document.querySelector(".hour");
 let m = document.querySelector(".minute");
 let s = document.querySelector(".second");
 
@@ -136,4 +136,20 @@ function stopwatch() {
 
 let timerID = setInterval(stopwatch, 1000);
 const stop = document.querySelector(".stop");
-stop.addEventListener("click", () => clearInterval(timerID));
+stop.addEventListener("click", () => clearInterval(timerID));*/
+
+let a = [];
+a.push(1, 2, 3);
+a.reverse();
+console.log(a);
+console.log([1, 2, 3].map((val) => val * 2));
+console.log([1, 2, 3].map((val) => multiBy5(val)));
+// console.log(a.map(multiBy5(a[i]), i));
+console.log(["1", "2", "3"].map((val) => parseInt(val)));
+
+console.log(a.map(multiBy5));
+console.log(a);
+
+function multiBy5(val) {
+  return val * 5;
+}
