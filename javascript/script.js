@@ -138,7 +138,7 @@ let timerID = setInterval(stopwatch, 1000);
 const stop = document.querySelector(".stop");
 stop.addEventListener("click", () => clearInterval(timerID));*/
 
-let a = [];
+/*let a = [];
 a.push(1, 2, 3);
 a.reverse();
 console.log(a);
@@ -152,4 +152,12 @@ console.log(a);
 
 function multiBy5(val) {
   return val * 5;
-}
+}*/
+
+console.log(typeof 1);
+console.log(typeof "jdnjnd");
+console.log(typeof true);
+console.log(typeof null);
+console.log(typeof undefined);
+console.log(typeof NaN);
+console.log(typeof (1 / 0));

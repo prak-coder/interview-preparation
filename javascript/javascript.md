@@ -36,4 +36,5 @@ fundamentals 2
    control structures like if for are statement variable dec and assignment are also statements
   -arrow func => seperates parameters and body of func mostly used when func(unnamed) are passed as argu to other func eg [1,2,3].map((val) => val *2)
   -console.log(["1", "2", "3"].map((val) => parseInt(val))); works but map( parseInt(val)) fails bcs parseInt expects more arguments
+  -if a value is not a number,string boolean symbol null or undefined its an object
 
