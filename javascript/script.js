@@ -154,10 +154,25 @@ function multiBy5(val) {
   return val * 5;
 }*/
 
-console.log(typeof 1);
+/*console.log(typeof 1);
 console.log(typeof "jdnjnd");
 console.log(typeof true);
 console.log(typeof null);
 console.log(typeof undefined);
 console.log(typeof NaN);
-console.log(typeof (1 / 0));
+console.log(typeof (1 / 0));*/
+
+// func express vs declaration
+
+console.log(declaredFunc(2006));
+// console.log(expressionFunc(2006));
+console.log(arrowFunc(2006));
+
+function declaredFunc(birthYear) {
+  return 2050 - birthYear;
+}
+const expressionFunc = function (birthYear) {
+  return 2050 - birthYear;
+};
+
+const arrowFunc = (birthYear) => 2050 - birthYear;

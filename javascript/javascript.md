@@ -37,4 +37,8 @@ fundamentals 2
   -arrow func => seperates parameters and body of func mostly used when func(unnamed) are passed as argu to other func eg [1,2,3].map((val) => val *2)
   -console.log(["1", "2", "3"].map((val) => parseInt(val))); works but map( parseInt(val)) fails bcs parseInt expects more arguments
   -if a value is not a number,string boolean symbol null or undefined its an object
-
+  -function are reusable blocks of code def parameters.. call/invoke/execute funct with values arguments. DRY donot repeat yourself.. default return undefined
+  -function declration -hoisted can be used before declaration func expression not hoisted will get ReferenceError cant use before intializion
+ -arrow func argu => returnvalue if (arg1,arg2) =>{lines code explixit return value} doesnot have own this keyword
+-func can call other functions
+-Arrays are numbered ds =[] literal const colors= new Array('red','blue') colors[0],colors.length
