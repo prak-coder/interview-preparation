@@ -42,3 +42,6 @@ fundamentals 2
  -arrow func argu => returnvalue if (arg1,arg2) =>{lines code explixit return value} doesnot have own this keyword
 -func can call other functions
 -Arrays are numbered ds =[] literal const colors= new Array('red','blue') colors[0],colors.length
+--pop vs push -last element.. element shift vs unshift 1st element 0000->0-pop 0000<-0 push shift 0<-000 0->00 unshift indexOf() includes('red') true/false
+-objects key-value ds const troy ={} order doesnot matter troy.firstname or  troy['firstname'(exp)]
+-objetcs can have methods bcs func express are values calcAge :fun(){} this points to object calling it. arrays are also objects bcs they have methods
