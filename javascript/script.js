@@ -162,6 +162,7 @@ console.log(typeof undefined);
 console.log(typeof NaN);
 console.log(typeof (1 / 0));*/
 
+/**
 // func express vs declaration
 
 console.log(declaredFunc(2006));
@@ -175,4 +176,59 @@ const expressionFunc = function (birthYear) {
   return 2050 - birthYear;
 };
 
-const arrowFunc = (birthYear) => 2050 - birthYear;
+const arrowFunc = (birthYear) => 2050 - birthYear;*/
+
+// for (let index = 1; index <= 10; index++) {
+//   if (index === 5) continue;
+//   console.log(index);
+// }
+
+// for (let index = 1; index <= 10; index++) {
+//   if (index === 6) break;
+//   console.log(index);
+
+const numbers = [3, 7, 12, 18, 21, 25, 30];
+
+// numbers.forEach((el) => {
+//   if(el >20) break;
+//   console.log(el);
+// })
+function print(array) {
+  for (let index = 0; index < array.length; index++) {
+    if (array[index] > 20) break;
+    console.log(array[index]);
+  }
+}
+// print(numbers);
+
+/*const numbers1 = [2, 5, 8, 9, 12, 15, 18, 21, 24];
+function printoddgreater15(array) {
+  for (let index = 0; index < array.length; index++) {
+    if (array[index] > 15) break;
+
+    if (array[index] % 2 === 0) continue;
+    console.log(array[index]);
+  }
+}
+
+printoddgreater15(numbers1);
+*/
+
+const correctPassword = "javascript";
+const pass = ["javascript", "hello", "fine"];
+let password = "";
+let attempt = 0;
+
+while (password !== correctPassword) {
+  // Generate or assign a password attempt
+  const maxattempt = 3;
+  attempt++;
+  if (attempt === maxattempt) {
+    console.log("you exhausted maxmimum attempt try after 5 minutes");
+    break;
+  }
+  password = pass[Math.random() * 3];
+  // Print whether it is correct
+}
+
+console.log("Login successful!");

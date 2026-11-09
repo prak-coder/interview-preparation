@@ -45,3 +45,6 @@ fundamentals 2
 --pop vs push -last element.. element shift vs unshift 1st element 0000->0-pop 0000<-0 push shift 0<-000 0->00 unshift indexOf() includes('red') true/false
 -objects key-value ds const troy ={} order doesnot matter troy.firstname or  troy['firstname'(exp)]
 -objetcs can have methods bcs func express are values calcAge :fun(){} this points to object calling it. arrays are also objects bcs they have methods
+-for(let i=0;i<=10;i++){} while(i<=10){} continue - continue loop without going to next.. break breaks the loop completely
+-loop can work backwards and loop inside loop is possible exercise loop contain repeat loop inside
+-while loop doesnt need counter just condition.. eg roll dice till you roll 1
