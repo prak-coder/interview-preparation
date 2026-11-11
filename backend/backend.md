@@ -1,0 +1,4 @@
+-node js is runtime that provide fs-http-path modules
+-express web framework on top of node makes build api easy
+-redis is the caching.. if a route/query is repeated stored in redis.. so no db query if its already in redis.. 100 user.. req for tour.. optimization
+-apache kafka.. real-time event handling.. add to app.. so when booking done emit event.. same when payment completed.. when location is shared bu tour guide.. what to do with events we have to implement like notification,mail,update internal analytics

@@ -1,4 +1,5 @@
 JavaScript Revision
+
     fundamentals 1
     -javascript is a dynamically typed language meaning only values have types not variables
      variable can change holding diff types at different times of program
@@ -28,6 +29,7 @@ JavaScript Revision
    -switch no break execute next case. default when all cases fail
    -expression produce value statement is if,switch.. `{expression}`
    -terenary operator condition ? expressionIfTrue : expressionIfFalse
+
 fundamentals 2
    -'use strict' warns uncaught ReferenceError and reserved key word
    -continue and break are key words in loops break breaks the loop continue the loop
@@ -47,4 +49,13 @@ fundamentals 2
 -objetcs can have methods bcs func express are values calcAge :fun(){} this points to object calling it. arrays are also objects bcs they have methods
 -for(let i=0;i<=10;i++){} while(i<=10){} continue - continue loop without going to next.. break breaks the loop completely
 -loop can work backwards and loop inside loop is possible exercise loop contain repeat loop inside
--while loop doesnt need counter just condition.. eg roll dice till you roll 1
+-while loop doesnt need counter just condition.. eg roll dice till you roll 1 login user till correct email/password
+
+DOM and Events
+   -Document object model structured representation of html documents.allow js to acess html el and css styles and to manipulate them
+   -dom tree structure by browser html load.. document obj special obj entry to DOM
+   -dom methods and property are part of web APIs..timers,fetch are eg of web API
+   -So the browser is a safety layer: websites are untrusted code from strangers, and Web APIs expose only what’s safe, with the user in control.cant close broswer or read history
+   -window is the global obj it contains document,timers(setinterval) fetch localstorage 
+   -queryselector,All,getelementbyid/tag/class.. .value for input elements .textContent only text string.. innerHtml to get entire html inside it
+   -window browser tab/window document-current html page
