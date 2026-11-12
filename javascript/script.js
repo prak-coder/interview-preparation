@@ -214,7 +214,7 @@ function printoddgreater15(array) {
 printoddgreater15(numbers1);
 */
 
-const correctPassword = "javascript";
+/*const correctPassword = "javascript";
 const pass = ["javascript", "hello", "fine"];
 let password = "";
 let attempt = 0;
@@ -232,3 +232,10 @@ while (password !== correctPassword) {
 }
 
 console.log("Login successful!");
+*/
+
+console.log(Math.trunc(Math.random() * 20) + 1);
+document.querySelector("body").style.backgroundColor = "green";
+// console.log(document.querySelector("html"));
+
+console.log(document.querySelector("body"));

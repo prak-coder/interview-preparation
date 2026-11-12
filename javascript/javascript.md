@@ -58,4 +58,7 @@ DOM and Events
    -So the browser is a safety layer: websites are untrusted code from strangers, and Web APIs expose only what’s safe, with the user in control.cant close broswer or read history
    -window is the global obj it contains document,timers(setinterval) fetch localstorage 
    -queryselector,All,getelementbyid/tag/class.. .value for input elements .textContent only text string.. innerHtml to get entire html inside it
-   -window browser tab/window document-current html page
+   -window-browser tab/window..document-current html page
+   -Events happen on DOM elements (and bubble up to the document). We use addEventListener('click', callbackFn), which is a higher-order function. We only pass the function reference, and the browser triggers it for the JS engine to execute when the event occurs
+   -chrome(v8,blink)..blink-html,css and webapis.. v8-js and webassembly..writes complex, math-heavy code in C++, Rust, or Go compile to .wasm(0 and 1)-v8 runs it..wasm cant touch dom or css..for heavy tasks (3d rendering/physics/video editing ).. eg.figma(c++ to wasm),google earth and photoshop web...
+   -Math.trunc(Math.random() * 20) + 1(1-20) document.queryselector('body).style.backgroundColor='green' manipulate css styles
