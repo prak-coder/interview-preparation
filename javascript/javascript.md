@@ -62,3 +62,5 @@ DOM and Events
    -Events happen on DOM elements (and bubble up to the document). We use addEventListener('click', callbackFn), which is a higher-order function. We only pass the function reference, and the browser triggers it for the JS engine to execute when the event occurs
    -chrome(v8,blink)..blink-html,css and webapis.. v8-js and webassembly..writes complex, math-heavy code in C++, Rust, or Go compile to .wasm(0 and 1)-v8 runs it..wasm cant touch dom or css..for heavy tasks (3d rendering/physics/video editing ).. eg.figma(c++ to wasm),google earth and photoshop web...
    -Math.trunc(Math.random() * 20) + 1(1-20) document.queryselector('body).style.backgroundColor='green' manipulate css styles
+   -queryselectorAll('.btn') returns a NodeList like an array..no map filter to array [...nodelist] Array.from()
+   -'click' one of event of PointerEvent.. when event happen the e is passed to callbackFn
