@@ -187,18 +187,18 @@ const arrowFunc = (birthYear) => 2050 - birthYear;*/
 //   if (index === 6) break;
 //   console.log(index);
 
-const numbers = [3, 7, 12, 18, 21, 25, 30];
+// const numbers = [3, 7, 12, 18, 21, 25, 30];
 
-// numbers.forEach((el) => {
-//   if(el >20) break;
-//   console.log(el);
-// })
-function print(array) {
-  for (let index = 0; index < array.length; index++) {
-    if (array[index] > 20) break;
-    console.log(array[index]);
-  }
-}
+// // numbers.forEach((el) => {
+// //   if(el >20) break;
+// //   console.log(el);
+// // })
+// function print(array) {
+//   for (let index = 0; index < array.length; index++) {
+//     if (array[index] > 20) break;
+//     console.log(array[index]);
+//   }
+// }
 // print(numbers);
 
 /*const numbers1 = [2, 5, 8, 9, 12, 15, 18, 21, 24];
@@ -234,8 +234,87 @@ while (password !== correctPassword) {
 console.log("Login successful!");
 */
 
-console.log(Math.trunc(Math.random() * 20) + 1);
-document.querySelector("body").style.backgroundColor = "green";
-// console.log(document.querySelector("html"));
+// console.log(Math.trunc(Math.random() * 20) + 1);
+// document.querySelector("body").style.backgroundColor = "green";
+// // console.log(document.querySelector("html"));
 
-console.log(document.querySelector("body"));
+// console.log(document.querySelector("body"));
+
+//var func scoped let and const block scoped
+// var global = 3;
+// function test() {
+//   var funcScope = 5;
+//   if (global > 10) {
+//     let blockScope = 8;
+//     return global + blockScope;
+//   }
+//   console.log(global);
+//   console.log(funcScope);
+//   // console.log(blockScope);
+//   return global + funcScope;
+// }
+// console.log(global);
+// console.log(test());
+// console.log(funcScope);
+"use strict";
+// const x = 5;
+// if (x === 5) {
+//   function blockScoped() {
+//     return 25;
+//   }
+//   const arrFun = () => "arrow";
+// }
+// console.log(blockScoped());
+// console.log(arrFun());
+// let x = 10;
+// function test() {
+//   let x = 20;
+//   console.log(x);
+// }
+// test();
+// const a = 1;
+// function first() {
+//   const b = 2;
+//   function second() {
+//     const c = 3;
+//     function third() {
+//       const d = 4;
+//       console.log(a, b, c, d);
+//     }
+//     third();
+//   }
+//   second();
+// // }
+// // first();
+
+// function first() {
+//   const x = 10;
+//   second();
+// }
+// function second() {
+//   console.log(typeof x);
+// }
+// first();
+
+// function outer() {
+//   let message = "Hello";
+//   function inner() {
+//     console.log(message);
+//   }
+//   return inner;
+// }
+// const fn = outer();
+// fn();
+
+function first() {
+  const a = 10;
+  function second() {
+    const b = 20;
+    function third() {
+      console.log(a + b);
+    }
+    third();
+  }
+  second();
+}
+first();

@@ -96,3 +96,21 @@ js bts
          callback-Queue{onclick,timer,data}
          event-loop puts func from callback que in call stack when empty
       }
+      -creation of global execution context top level code-->execute toplevel code inside global EC-->execute functions and waiting callbacks
+      -inside execution context 
+                     EC{
+                        1.variable_environ
+                           -let const var declarations,functions and argument object 
+                        2.scope chain 
+                        3.this keyword 
+                     } (ec for arrow func no this and arguments obj)
+      -inside call stack 1.global-- first() -- second() after return removed from callstack global removed when tab closes
+
+      -scoping:program variables are organized and accesed
+      -lexical scoping scoping controlled by placement of func and blocks in code
+      -scope:space/env in which variable is declared (var env in case of funct) 1.global 2.function 3.block scoped
+     -global scope.. outside func or block..  everywhere access  
+     -func scope.. access only inside func
+     -ES6 block scope.. acesss inside block (let const).. var func scope.. functions are block scoped (only strict mode)
+     -scope chain and variable look up in scope chain.. second--first--global.. first func dont have acess to second chain variable..
+     --scope chain has nothing to do with order of func calls 
