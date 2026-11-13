@@ -61,6 +61,38 @@ DOM and Events
    -window-browser tab/window..document-current html page
    -Events happen on DOM elements (and bubble up to the document). We use addEventListener('click', callbackFn), which is a higher-order function. We only pass the function reference, and the browser triggers it for the JS engine to execute when the event occurs
    -chrome(v8,blink)..blink-html,css and webapis.. v8-js and webassembly..writes complex, math-heavy code in C++, Rust, or Go compile to .wasm(0 and 1)-v8 runs it..wasm cant touch dom or css..for heavy tasks (3d rendering/physics/video editing ).. eg.figma(c++ to wasm),google earth and photoshop web...
-   -Math.trunc(Math.random() * 20) + 1(1-20) document.queryselector('body).style.backgroundColor='green' manipulate css styles
-   -queryselectorAll('.btn') returns a NodeList like an array..no map filter to array [...nodelist] Array.from()
+   -Math.trunc(Math.random() * 20) + 1(1-20) document.queryselector('body').style.backgroundColor='green' manipulate css styles
+   -queryselectorAll('.btn') returns a NodeList like an array..no map filter to array [...nodelist]/ Array.from()
    -'click' one of event of PointerEvent.. when event happen the e is passed to callbackFn
+
+
+js bts 
+   -high level -- c low level fast.. memory management
+   -garbage collected memory management 
+   -interpreted/jit compiled.. js engine..
+   -multipradim.. procedural,oop,functional..
+   -proto type based in heritance.. [1,2,3].push => Array.proty
+    eg:java class based inheritance
+   -first class func.. stored in variables.. passed into and returned from another func
+   -dynamic.. variable can hold different values in course of program..
+   -single threaded non blocking concurrency model
+      -concurrency model how js handle multiple tasks happening at same time 
+      -js single thread-- do one thing at a time.. long running task..fetch data .. block thread..
+      -event loop no blocking--executes in background and puts in main thread when task is completed
+      -js engine call stack (code execution execution context) heap(obj in memory)
+      -compilation source code --binary file--execution
+      -interpreted sc--execution line by line
+      -jit sc---machinecode--execution (immediately and no file)
+      -js engine -->parsing- ds called AST abstract syntax tree (syntax errors)-->compilation-->execution optimized
+      -js runtime in browser{
+         js engine{heap, call-stack}
+         web-api{timers,fetch,DOM}
+         callback-Queue{onclick,timer,data}
+         event-loop puts func from callback que in call stack when empty
+      }
+      -js runtime in Nodejs{
+         js engine{heap, call-stack}
+         {c++ bindings and thread pool}
+         callback-Queue{onclick,timer,data}
+         event-loop puts func from callback que in call stack when empty
+      }
