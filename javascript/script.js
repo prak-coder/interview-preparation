@@ -343,6 +343,14 @@ console.log("Login successful!");
 //   console.log(this);
 // }
 // testThis();
-document.querySelector(".stop").addEventListener("click", function () {
-  console.log(this);
-});
+// document.querySelector(".stop").addEventListener("click", function () {
+//   console.log(this);
+// });
+const user = {
+  name: "Asha",
+  show() {
+    return this.name;
+  },
+};
+const fn = user.show;
+console.log(fn());
