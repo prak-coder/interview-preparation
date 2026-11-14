@@ -331,15 +331,18 @@ console.log("Login successful!");
 // c();
 // console.log(c());
 
-const troy = {
-  firstname: "troy",
-  birthyear: 1995,
-  calcAge: function () {
-    console.log(`my age is ${2050 - this.birthyear}`);
-  },
-};
-troy.calcAge();
-function testThis() {
+// const troy = {
+//   firstname: "troy",
+//   birthyear: 1995,
+//   calcAge: function () {
+//     console.log(`my age is ${2050 - this.birthyear}`);
+//   },
+// };
+// troy.calcAge();
+// function testThis() {
+//   console.log(this);
+// }
+// testThis();
+document.querySelector(".stop").addEventListener("click", function () {
   console.log(this);
-}
-testThis();
+});

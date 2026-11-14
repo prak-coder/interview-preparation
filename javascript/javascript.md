@@ -133,9 +133,10 @@ js bts
          why hoisting: use func before dec (mutual recursion )..var hoisting byproduct
 
          best practice:
-             dont use var,use let and const
+             dont use var,use let and const(var also create prop on global obj)
              dont use functions or variable before declaring them
              declare variables at the top of their scope(top of file,top of func,start of block)
+             never use arrow fuct as methods
          
          this
             -special variable created for every ec(execution context)(function)
@@ -150,3 +151,4 @@ js bts
         listener this   dom  el that handler is attached to 
         new call apply and bind 
       ** this doesnot point to func iself and not to variable environment
+       - no arguments variable available inside aroww function
