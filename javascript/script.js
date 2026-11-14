@@ -256,7 +256,7 @@ console.log("Login successful!");
 // console.log(global);
 // console.log(test());
 // console.log(funcScope);
-"use strict";
+// "use strict";
 // const x = 5;
 // if (x === 5) {
 //   function blockScoped() {
@@ -319,14 +319,27 @@ console.log("Login successful!");
 // }
 // first();
 
-function makeCounter() {
-  let count = 0;
-  return function () {
-    count++;
-    return count;
-  };
+// function makeCounter() {
+//   let count = 0;
+//   return function () {
+//     count++;
+//     return count;
+//   };
+// }
+// const c = makeCounter();
+// c();
+// c();
+// console.log(c());
+
+const troy = {
+  firstname: "troy",
+  birthyear: 1995,
+  calcAge: function () {
+    console.log(`my age is ${2050 - this.birthyear}`);
+  },
+};
+troy.calcAge();
+function testThis() {
+  console.log(this);
 }
-const c = makeCounter();
-c();
-c();
-console.log(c());
+testThis();

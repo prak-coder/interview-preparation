@@ -131,3 +131,22 @@ js bts
          es6 tdz to avoid and catch errors using variables before declaration is bad practice and should be avoided .. make const variable actually work
 
          why hoisting: use func before dec (mutual recursion )..var hoisting byproduct
+
+         best practice:
+             dont use var,use let and const
+             dont use functions or variable before declaring them
+             declare variables at the top of their scope(top of file,top of func,start of block)
+         
+         this
+            -special variable created for every ec(execution context)(function)
+            -points to the owner of the func in which this keyword is used
+            -not static .how func is called only assigned when func actually called
+        method  this    <Obj that is calling the method>
+        simple  this    undefined(strict) otherwise globalobject
+        func 
+        call 
+        arrw    this    this of surrounding func (lexical this)
+        event
+        listener this   dom  el that handler is attached to 
+        new call apply and bind 
+      ** this doesnot point to func iself and not to variable environment
