@@ -306,15 +306,27 @@ console.log("Login successful!");
 // const fn = outer();
 // fn();
 
-function first() {
-  const a = 10;
-  function second() {
-    const b = 20;
-    function third() {
-      console.log(a + b);
-    }
-    third();
-  }
-  second();
+// function first() {
+//   const a = 10;
+//   function second() {
+//     const b = 20;
+//     function third() {
+//       console.log(a + b);
+//     }
+//     third();
+//   }
+//   second();
+// }
+// first();
+
+function makeCounter() {
+  let count = 0;
+  return function () {
+    count++;
+    return count;
+  };
 }
-first();
+const c = makeCounter();
+c();
+c();
+console.log(c());

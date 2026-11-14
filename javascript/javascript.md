@@ -92,8 +92,10 @@ js bts
       }
       -js runtime in Nodejs{
          js engine{heap, call-stack}
-         {c++ bindings and thread pool}
-         callback-Queue{onclick,timer,data}
+         {c++ bindings- low level file read open network socket
+          and thread pool-libuv-handles heavy blocking tasks-file I/0
+          }
+         callback-Queue{multiple Queues,Microtask que ,event loop phase ques}
          event-loop puts func from callback que in call stack when empty
       }
       -creation of global execution context top level code-->execute toplevel code inside global EC-->execute functions and waiting callbacks
@@ -114,3 +116,18 @@ js bts
      -ES6 block scope.. acesss inside block (let const).. var func scope.. functions are block scoped (only strict mode)
      -scope chain and variable look up in scope chain.. second--first--global.. first func dont have acess to second chain variable..
      --scope chain has nothing to do with order of func calls 
+    
+    hoisting and TDZ
+     -hoisting:some type of variable acess/usable before declaration variable lifted to top of scope 
+             bts:ec{variable_environ,scope_chain,this} before execution code scanned for variable declaration and for each variable a  new property created in variable_environ_object
+                           hoisted       inital_value        scope
+         func declaration    yes         actual func         block(strict)
+         var variables       yes         undefined           func
+         let and const       no(yes)     unintialized(tdz)   block
+         variables
+         func expess         depends on let/const or var                            
+         and arrow 
+
+         es6 tdz to avoid and catch errors using variables before declaration is bad practice and should be avoided .. make const variable actually work
+
+         why hoisting: use func before dec (mutual recursion )..var hoisting byproduct
