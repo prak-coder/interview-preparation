@@ -169,3 +169,20 @@ js bts
      this is why can use const for non primitive bcs its mutable
      -Object.assign({},troy).. creates a shallow copy(not inside ref are changed)
       - can use external lib-- lodash to create deep clone
+
+Data Structures, Modern Operators and Strings
+
+   destructuring: complex ds to simple
+   arrays:
+   const [x,y,z]=[1,2,3]//[first,,third]
+   a,b,temp.. [a,b]=[b,a] no temp
+   [i,,[j,k]]=[1,2,[5,9]] 
+   const [p=1,q=1]=[3] default values
+
+   Objects
+   const {firstname,birthyear} = troy (order not imp but same prop names)
+   const {firstname:officialName,b:p}
+   let a=5,b=6 obj={a:'red',b:'blue'}
+   ({a,b}=obj)-- otherwise things its code block
+   {fri:{a,b}}={fri:{a:1,b:2}}... nested obj 
+   function printuser({a,b}){console.log(a,b)} -- destructuring directly in parameters

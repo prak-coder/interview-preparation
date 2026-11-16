@@ -346,11 +346,20 @@ console.log("Login successful!");
 // document.querySelector(".stop").addEventListener("click", function () {
 //   console.log(this);
 // });
-const user = {
-  name: "Asha",
-  show() {
-    return this.name;
-  },
-};
-const fn = user.show;
-console.log(fn());
+// const user = {
+//   name: "Asha",
+//   show() {
+//     return this.name;
+//   },
+// };
+// const fn = user.show;
+// console.log(fn());
+const arr = [1, 2, 3];
+const [x, y, z] = arr;
+console.log(x, y, z);
+console.log(arr);
+let a = 5,
+  b = 6;
+const obj = { a: "red", b: "blue" };
+({ a, b } = obj);
+console.log(a, b);
