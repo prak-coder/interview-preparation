@@ -104,15 +104,41 @@ class SinglyLinkedList {
     this.length++;
     return true;
   }
+  remove(index) {
+    if (index < 0 || index >= this.length) return undefined;
+    if (index === this.length - 1) return this.pop();
+    if (index === 0) return this.shift();
+    var beforeNode = this.get(index - 1);
+    var removeNode = beforeNode.next;
+    beforeNode.next = removeNode.next;
+    removeNode.next = null;
+    this.length--;
+    return removeNode;
+  }
+  reverse() {
+    var node = this.head;
+    this.head = this.tail;
+    this.tail = node;
+    var next;
+    var prev = null;
+    for (let index = 0; index < this.length; index++) {
+      next = node.next;
+      node.next = prev;
+      prev = node;
+      node = next;
+    }
+    return this;
+  }
 
-  //10 20 30 0
-  // print() {
-  //   let temp = this.head;
-  //   while (temp !== null) {
-  //     process.stdout.write(temp.val + " ");
-  //     temp = temp.next;
-  //   }
-  // }
+  print() {
+    var arr = [];
+    var temp = this.head;
+    while (temp !== null) {
+      arr.push(temp.val);
+      temp = temp.next;
+    }
+    console.log(arr);
+  }
 }
 
 // let first = new Node(3)
@@ -124,8 +150,18 @@ list.push(10);
 list.push(20);
 list.push(30);
 list.push(40);
-console.log(list.insert(-1, 5));
-console.log(list.insert(100, 5));
-console.log(list.insert(0, 5));
-console.log(list.insert(5, 50));
-console.log(list.insert(2, 15));
+list.push(50);
+
+// console.log(list.insert(-1, 5));
+// console.log(list.insert(100, 5));
+// console.log(list.insert(0, 5));
+// console.log(list.insert(5, 50));
+// console.log(list.insert(2, 15));
+// console.log(list.remove(-1));
+// console.log(list.remove(6));
+// console.log(list.remove(0));
+// console.log(list.remove(list.length - 1));
+// console.log(list.remove(1));
+console.log(list.print());
+console.log(list.reverse());
+console.log(list.print());

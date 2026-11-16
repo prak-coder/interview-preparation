@@ -31,3 +31,13 @@ Singly Linked List
  -sll consits of nodes each node has a value and a pointer to another node or null
  -push() add value at end.. pop() to get val from end.. shift to remove val from start..unshift to add value to start
  -get(index)-- returns the node at index.. set(index,val)..uses set to find node and replace with val
+-insert(index, val) insert the value at given index uses get and set methods inside 
+-reverse list not create copy reverse as we traverse 
+-Big O of sll
+     insertion -O(1)  array -- renumber O(N)
+     removal depends start O(1) else O(N) end-worse travese full list
+     search -O(N)  array-easy
+     access -O(N)
+sll are excellent alternative to array if(insert/delete at beginning) freq required   
+  arr have bult in index sll no index
+sll are foundation of ds like Stacks and Queues[call stack and Queue js engine]
