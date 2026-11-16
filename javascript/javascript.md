@@ -148,7 +148,24 @@ js bts
         call 
         arrw    this    this of surrounding func (lexical this)
         event
-        listener this   dom  el that handler is attached to 
+        listener this   dom  el that handler is attached to(not arrw func)
         new call apply and bind 
       ** this doesnot point to func iself and not to variable environment
        - no arguments variable available inside aroww function
+       -var firstname='jeff'--- prop on window obj -- troy.greet() is an arrw so window and 
+       'hi jeff' .. so dont use var and no arrw func as methods
+       -normal func call inside a method.. iszensi() inside calcage()- this is undefined
+         sol: self/that pre es6
+         sol 2: use arrw func 
+      primitive vs reference
+      call stack                    heap
+      age   adress  val
+             001     20            adres   value
+     oldage  002     21            AC251    { name:'' age:
+
+     me      003        AC251                            }
+     friend
+
+     this is why can use const for non primitive bcs its mutable
+     -Object.assign({},troy).. creates a shallow copy(not inside ref are changed)
+      - can use external lib-- lodash to create deep clone
