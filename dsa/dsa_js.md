@@ -13,6 +13,39 @@ Space Complexity
  --objects and arrays O(n) n is length of array or the number of key-value pairs
 -- add and return sum of array is O(1) only total variable.. return 2*value of array in new array is O(n) 10 items in arry we need 10 items in memory so O(n) -- space not time
 
+
+Analysing performance of Array and Objects (js)
+ -how ds that comes with js perform
+
+  Big O of Objects(unordered key:value pair)
+     insertion -O(1)
+     Removal -O(1)
+     acess -O(1)
+     search -O(N) meaning is true/25 inside the value side of the Obj
+  object methods 
+   Object.keys(user)    - O(N)   
+   Object.values(user)   - O(N)   
+   Object.entries(user) - O(N)   
+   user.hasOwnProperty -O(1)
+
+  arrays 
+    -use when order is needed (can use sll/dll) arry free
+     insertion depends (last easy)
+     Removal depends (last easy)
+     acess -O(1)
+     search -O(N)
+  array methods
+   push() pop() -O(1) add remove at end fastest
+   shift() unshift() -O(N)
+   concat splice slice -O(N)
+   sort -O(N * logN) 
+   foreach,map,reduce,filter -O(N) we have to go through each item 
+
+Problem solving approach and pattern
+
+ algorithm 
+   a process or set of steps to accomplish a task 
+
 Data Structures 
 -ds are collections of values,have relationship among them,functions/operation that can be applied to the data eg array values-order-push pop reverse methods
 -why many bcs diff ds excel different things.. some highly specilaized others generally used
