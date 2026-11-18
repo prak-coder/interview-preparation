@@ -379,11 +379,27 @@ console.log("Login successful!");
 // console.log(a[1]);
 // console.log(text);
 
-const a = [1, 2, 3, 4];
-const s = new Set(["hammer", "screwdriver"]);
-// const m = new Map("berlin", "york");
-const text = "javascript";
-console.log(...a);
-console.log(...s);
-// console.log(...m);
-console.log(...text);
+// const a = [1, 2, 3, 4];
+// const s = new Set(["hammer", "screwdriver"]);
+// // const m = new Map("berlin", "york");
+// const text = "javascript";
+// console.log(...a);
+// console.log(...s);
+// // console.log(...m);
+// // console.log(...text);
+// const user = {
+//   name: "Asha",
+//   show() {
+//     return this.name;
+//   },
+// };
+// const newUser = { ...user, job: "student" };
+// console.log(newUser);
+// console.log(3 || "hi");
+// console.log(null || "hi");
+
+// console.log(3 && "hi");
+// console.log(null && "hi");
+const guests = { numguest: 0 };
+console.log((noGuest = guests.numguest || 10));
+console.log((noGuest = guests.numguest ?? 10));

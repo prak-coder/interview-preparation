@@ -190,7 +190,22 @@ Data Structures, Modern Operators and Strings
    {fri:{a,b}}={fri:{a:1,b:2}}... nested obj 
    function printuser({a,b}){console.log(a,b)} -- destructuring directly in parameters
 
-   spread operator ...
+   spread operator  =... rest operator ... = 
      -const newArr =[...arr,5,6]
      -iterables arrays strings sets maps but not object
      -spread works on all iterables 
+     -dominos.orderPizza(...ingredients)
+     -es2018 work on objects const newUser ={...user,job:'student'}
+     -const userCopy ={...user} // shallow copy
+     - spread bcs on right side of '='
+     -const [a,b,...others] =[1,2,3,4,5] rest should be the last element
+     -const {sat,...weekdays}=alldaysofWeek
+     -rest in func  add(...numbers) add(2,3),add(4,5,6)
+
+   short circuiting && and ||
+    - or if first value true it short circuit (3||'hi') (null||'hi')-- first truthy value
+    -and  (false && null) ('hi' && 5 && 0 && 'ff')  --first falsy value
+    -use for default vaues user || 10 and where expression needed as in jsx {expression}
+
+   nullish colasing operator ?? works nullish values (null and undefined)
+   noGuest = guests.numguest || 10 // 0 -- 10 instead guests.numguest ?? 10 // 0 -- 10 
