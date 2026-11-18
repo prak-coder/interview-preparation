@@ -45,6 +45,28 @@ Problem solving approach and pattern
 
  algorithm 
    a process or set of steps to accomplish a task 
+   
+-understand the problem 
+   -restate in own words   
+   -input ?? output 
+   -can output from input 
+   -how to label pieces of data
+explore concrete examples
+   -start simple
+   -more complexity
+   -empty input 
+   -invalid inputs 
+   -edge cases
+break it down
+  -write steps like 
+  create obj to return 
+  -loop 
+  -return obj 
+solve/simplfy
+  -dont know how to leave non alpha numeric leave 
+  -implement what u know
+look back and refactor
+
 
 Data Structures 
 -ds are collections of values,have relationship among them,functions/operation that can be applied to the data eg array values-order-push pop reverse methods
