@@ -74,7 +74,7 @@ js bts
    -proto type based in heritance.. [1,2,3].push => Array.proty
     eg:java class based inheritance
    -first class func.. stored in variables.. passed into and returned from another func
-   -dynamic.. variable can hold different values in course of program..
+   -dynamic.. variable can hold different values in course of program.. weakly typed-does type coercion 
    -single threaded non blocking concurrency model
       -concurrency model how js handle multiple tasks happening at same time 
       -js single thread-- do one thing at a time.. long running task..fetch data .. block thread..
@@ -169,7 +169,10 @@ js bts
      this is why can use const for non primitive bcs its mutable
      -Object.assign({},troy).. creates a shallow copy(not inside ref are changed)
       - can use external lib-- lodash to create deep clone
-
+    SyntaxError     const x;
+    ReferenceError console.log(a) let a;
+    TypeError   let a=5; a() 'hi'.push('nn')
+    RangeError (Out of Bounds),URIError (Broken Web Links),EvalError (Legacy Error): InternalError (Engine Overload) AggregateError (Multiple Failures): 
 Data Structures, Modern Operators and Strings
 
    destructuring: complex ds to simple
@@ -186,3 +189,8 @@ Data Structures, Modern Operators and Strings
    ({a,b}=obj)-- otherwise things its code block
    {fri:{a,b}}={fri:{a:1,b:2}}... nested obj 
    function printuser({a,b}){console.log(a,b)} -- destructuring directly in parameters
+
+   spread operator ...
+     -const newArr =[...arr,5,6]
+     -iterables arrays strings sets maps but not object
+     -spread works on all iterables 

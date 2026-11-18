@@ -354,12 +354,36 @@ console.log("Login successful!");
 // };
 // const fn = user.show;
 // console.log(fn());
-const arr = [1, 2, 3];
-const [x, y, z] = arr;
-console.log(x, y, z);
-console.log(arr);
-let a = 5,
-  b = 6;
-const obj = { a: "red", b: "blue" };
-({ a, b } = obj);
-console.log(a, b);
+// const arr = [1, 2, 3];
+// const [x, y, z] = arr;
+// console.log(x, y, z);
+// console.log(arr);
+// let a = 5,
+//   b = 6;
+// const obj = { a: "red", b: "blue" };
+// ({ a, b } = obj);
+// console.log(a, b);
+
+// console.log(c);
+// const c;
+// console.log(c);
+
+// console.log(l);
+// let l;
+// console.log(l);
+// // l();
+// let text = "hello";
+// // console.log(text.push("world"));
+// const a=[]
+//  = text.split().push("world");
+// console.log(a[1]);
+// console.log(text);
+
+const a = [1, 2, 3, 4];
+const s = new Set(["hammer", "screwdriver"]);
+// const m = new Map("berlin", "york");
+const text = "javascript";
+console.log(...a);
+console.log(...s);
+// console.log(...m);
+console.log(...text);
