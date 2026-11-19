@@ -250,3 +250,12 @@ Data Structures, Modern Operators and Strings
       -const rest =new Map([['name','best'],[1,'street']])
       - obj to map const m = new Map(Object.entries(user))
       -map to array [...rest]
+   
+   which ds to use
+    -data from 1.inside program 2.from ui(form) 3.from web api
+    -if(simple list) array || set
+    -if(key/value) obj/set
+    -array ordered list and manipulate data(lot methods) 
+    -sets unique,high performance,remove dupl from arr
+    -obj traditional easy to write and acess
+    -map performance prop not string iterable
