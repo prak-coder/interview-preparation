@@ -412,18 +412,54 @@ const menu = ["egg", "fish", "chicken", "mutton"];
 //   // if (el === "fish") continue;
 //   console.log(`item ${i + 1}:${el}`);
 // }
-const weekdays = ["mon"];
+// const weekdays = ["mon"];
+// const user = {
+//   // [`day-${weekdays[0]}`]: "test cal prop name",
+//   firstname: "troy",
+//   job: "student",
+//   friends: [{ firstname: "troy" }, { firstname: "jeff" }],
+// };
+// console.log(user);
+// // console.log(user?.friends?.[0]?.firstname);
+// console.log(Object.keys(user));
+// const values = Object.values(user);
+// console.log(values);
+// const [{ firstname }] = values[2];
+// console.log(firstname);
+// console.log(Object.entries(user));
+
+// const colorsSet = new Set(["red", "blue", "yellow", "brown"]);
+// console.log(colorsSet);
+// console.log(colorsSet.size);
+// console.log(colorsSet.add("grey"));
+// console.log(colorsSet.has("red"));
+// console.log(colorsSet.delete("brown"));
+// console.log(colorsSet);
+// console.log(colorsSet.clear());
+// console.log(colorsSet);
+// const userSet = new Set("troy");
+// console.log(userSet);
 const user = {
-  // [`day-${weekdays[0]}`]: "test cal prop name",
-  firstname: "troy",
-  job: "student",
-  friends: [{ firstname: "troy" }, { firstname: "jeff" }],
+  id: 101,
+  name: "Arjun",
+  email: "arjun@example.com",
+  age: 26,
+  isActive: true,
+  role: "developer",
+  skills: ["JavaScript", "Node.js", "PostgreSQL"],
+  address: {
+    city: "Chennai",
+    country: "India",
+  },
+  greet() {
+    return `Hi, I'm ${this.name}`;
+  },
 };
-console.log(user);
-// console.log(user?.friends?.[0]?.firstname);
-console.log(Object.keys(user));
-const values = Object.values(user);
-console.log(values);
-const [{ firstname }] = values[2];
-console.log(firstname);
-console.log(Object.entries(user));
+const rest = new Map();
+rest.set("name", "best restau");
+rest.set(1, "street");
+rest.set(2, "plaza");
+rest.set(document.querySelector("h1"), "DOM el");
+console.log(rest);
+const umap = new Map(Object.entries(user));
+console.log(umap);

@@ -229,3 +229,24 @@ Data Structures, Modern Operators and Strings
       -keys values and entries
       -Object.keys(user) Object.values(user) Object.entries(user) // on arr colors.entries()
       -for(const x of keys|| values)
+   
+   Set 
+      -es6 set and map
+      -iterable of unique values string also iterable
+      -const colorsSet =new Set(['red','blue','yellow','brown','red']) -2nd red ignored
+      -.size not length
+      -methods colorsSet.has() .add()  .delete() .clear()
+      -can loop for(const el of colorsSet)
+      -use to create unique value arr [...colorsSet]
+      -since they have unique values no need for order(unordered) -preserve order no index 
+       based access ~~colorsSet[0]~~
+   
+   Map
+      -obj with any type for prop
+      -const rest =new Map() -- empty map then add using set method 
+      -.set() can be chained
+      -.get('prop name') .has() .delete()
+      -can use obj as prop eg rest.set(doc.queryselector(),'dom')
+      -const rest =new Map([['name','best'],[1,'street']])
+      - obj to map const m = new Map(Object.entries(user))
+      -map to array [...rest]
