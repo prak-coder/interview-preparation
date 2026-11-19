@@ -400,6 +400,30 @@ console.log("Login successful!");
 
 // console.log(3 && "hi");
 // console.log(null && "hi");
-const guests = { numguest: 0 };
-console.log((noGuest = guests.numguest || 10));
-console.log((noGuest = guests.numguest ?? 10));
+// const guests = { numguest: 0 };
+// console.log((noGuest = guests.numguest || 10));
+// console.log((noGuest = guests.numguest ?? 10));
+const menu = ["egg", "fish", "chicken", "mutton"];
+// console.log([...menu.entries()]);
+
+// for (const [i, el] of menu.entries()) {
+//   // if (el === "fish") break;
+//   // console.log(el);
+//   // if (el === "fish") continue;
+//   console.log(`item ${i + 1}:${el}`);
+// }
+const weekdays = ["mon"];
+const user = {
+  // [`day-${weekdays[0]}`]: "test cal prop name",
+  firstname: "troy",
+  job: "student",
+  friends: [{ firstname: "troy" }, { firstname: "jeff" }],
+};
+console.log(user);
+// console.log(user?.friends?.[0]?.firstname);
+console.log(Object.keys(user));
+const values = Object.values(user);
+console.log(values);
+const [{ firstname }] = values[2];
+console.log(firstname);
+console.log(Object.entries(user));

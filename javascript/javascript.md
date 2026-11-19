@@ -173,6 +173,7 @@ js bts
     ReferenceError console.log(a) let a;
     TypeError   let a=5; a() 'hi'.push('nn')
     RangeError (Out of Bounds),URIError (Broken Web Links),EvalError (Legacy Error): InternalError (Engine Overload) AggregateError (Multiple Failures): 
+
 Data Structures, Modern Operators and Strings
 
    destructuring: complex ds to simple
@@ -199,7 +200,7 @@ Data Structures, Modern Operators and Strings
      -const userCopy ={...user} // shallow copy
      - spread bcs on right side of '='
      -const [a,b,...others] =[1,2,3,4,5] rest should be the last element
-     -const {sat,...weekdays}=alldaysofWeek
+     -const {sat,sun,...weekdays}=alldaysofWeek
      -rest in func  add(...numbers) add(2,3),add(4,5,6)
 
    short circuiting && and ||
@@ -208,4 +209,23 @@ Data Structures, Modern Operators and Strings
     -use for default vaues user || 10 and where expression needed as in jsx {expression}
 
    nullish colasing operator ?? works nullish values (null and undefined)
-   noGuest = guests.numguest || 10 // 0 -- 10 instead guests.numguest ?? 10 // 0 -- 10 
+   noGuest = guests.numguest || 10 // 0 --> 0 so  instead guests.numguest ?? 10 // 0 -- 10 
+
+   for-of loop
+      -es6 for(const el of menu) 
+      -break and continue work in forof
+      -for(const {i,el} of menu.entries()) -to get index value
+   
+   enhanced object literal 
+      -const user = {jobDetails} jobDetails is a obj outside..jobDetails:jobDetails not 
+      -const user = {login():{}} -no prop and func expres 
+      -calculate prop name const user = {[`day-${weekdays[0]}`]}
+   
+   Optional chain ?.
+      -user?.friends?.[0]?.firstname
+      -user?.work?.() - for methods too
+
+   Looping over Objects 
+      -keys values and entries
+      -Object.keys(user) Object.values(user) Object.entries(user) // on arr colors.entries()
+      -for(const x of keys|| values)
