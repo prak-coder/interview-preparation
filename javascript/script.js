@@ -439,27 +439,37 @@ const menu = ["egg", "fish", "chicken", "mutton"];
 // console.log(colorsSet);
 // const userSet = new Set("troy");
 // console.log(userSet);
-const user = {
-  id: 101,
-  name: "Arjun",
-  email: "arjun@example.com",
-  age: 26,
-  isActive: true,
-  role: "developer",
-  skills: ["JavaScript", "Node.js", "PostgreSQL"],
-  address: {
-    city: "Chennai",
-    country: "India",
-  },
-  greet() {
-    return `Hi, I'm ${this.name}`;
-  },
-};
-const rest = new Map();
-rest.set("name", "best restau");
-rest.set(1, "street");
-rest.set(2, "plaza");
-rest.set(document.querySelector("h1"), "DOM el");
-console.log(rest);
-const umap = new Map(Object.entries(user));
-console.log(umap);
+// const user = {
+//   id: 101,
+//   name: "Arjun",
+//   email: "arjun@example.com",
+//   age: 26,
+//   isActive: true,
+//   role: "developer",
+//   skills: ["JavaScript", "Node.js", "PostgreSQL"],
+//   address: {
+//     city: "Chennai",
+//     country: "India",
+//   },
+//   greet() {
+//     return `Hi, I'm ${this.name}`;
+//   },
+// };
+// const rest = new Map();
+// rest.set("name", "best restau");
+// rest.set(1, "street");
+// rest.set(2, "plaza");
+// rest.set(document.querySelector("h1"), "DOM el");
+// console.log(rest);
+// const umap = new Map(Object.entries(user));
+// console.log(umap);
+// const s = "Str$ing$";
+// console.log(s, s.toLocaleLowerCase(), s.replaceAll("$", ""));
+// console.log(
+//   "map performance prop not string iterable".split(" ,").forEach((el) => {
+//     const arr = [];
+//     arr.push(el.split(" "));
+//     console.log(...arr.flat());
+//   }),
+// );
+console.log("map performance prop not string iterable".split(" ").join("_"));

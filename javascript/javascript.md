@@ -232,7 +232,7 @@ Data Structures, Modern Operators and Strings
    
    Set 
       -es6 set and map
-      -iterable of unique values string also iterable
+      -iterable of unique values, string also iterable
       -const colorsSet =new Set(['red','blue','yellow','brown','red']) -2nd red ignored
       -.size not length
       -methods colorsSet.has() .add()  .delete() .clear()
@@ -255,7 +255,23 @@ Data Structures, Modern Operators and Strings
     -data from 1.inside program 2.from ui(form) 3.from web api
     -if(simple list) array || set
     -if(key/value) obj/set
-    -array ordered list and manipulate data(lot methods) 
+    -use array if- ordered list and manipulate data(lot methods) 
     -sets unique,high performance,remove dupl from arr
     -obj traditional easy to write and acess
-    -map performance prop not string iterable
+    -map performance ,prop not string ,iterable
+
+    Working With Strings
+      -'strings'[0],'strings'.length
+      -indexOf(),lastindexof() use inside slice(0,4) 4-excluded 
+      -toLowercase,touppercase,replace('$',''),trim(),replaceAll,replace(/the/g,'') -regEx
+      -includes(),startswith,endswith
+      -split(" "),join('_'),padstart(),padend()
+
+ A Closer Look at Functions
+
+   default parameters
+      -function(a,b=1) 
+   primitive vs ref as parameters
+      - primitive a copy mutation will not affect
+      -ref adress mutation will not affect original
+      -js only pass by value no reference.. c++ we can pass address of primitive too
