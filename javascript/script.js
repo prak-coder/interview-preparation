@@ -472,4 +472,11 @@ const menu = ["egg", "fish", "chicken", "mutton"];
 //     console.log(...arr.flat());
 //   }),
 // );
-console.log("map performance prop not string iterable".split(" ").join("_"));
+// console.log("map performance prop not string iterable".split(" ").join("_"));
+// function print(str) {
+//   console.log(str);
+// }
+// console.log(typeof print);
+
+const greet = (greeting) => (name) => `${greeting} : ${name}`;
+console.log(greet("hello")("troy"));

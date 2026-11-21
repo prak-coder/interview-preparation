@@ -275,3 +275,19 @@ Data Structures, Modern Operators and Strings
       - primitive a copy mutation will not affect
       -ref adress mutation will not affect original
       -js only pass by value no reference.. c++ we can pass address of primitive too
+
+   func class citizen(feature) vs higher oder func(egs)
+      -stored i variable pass to func ret from func
+      -func are type of object.. have func methods like bind,call etc
+      -High Order func -accepts func || returns func || both(called so bcs higher level of abstraction)
+      -func return func greet('hello')('troy')
+   call,apply,bind
+      -mehods for func(bcs func obj)
+      -obj has book method we copy to new method newBook if called this--undefined
+      -book.call(eurroeing(obj this should refer to),a,b(argu of book))
+      -apply takes arr.. now book.call(eurroeing,...[a,b])
+      -bind doesnt call but returns func const bookEW=book.bind(eurroeing)
+      -bind can set param in stone like  const bookEW3=book.bind(eurroeing,3)-- only pass b
+      -with event listener (this points to dom el) 
+         -document.queryselector('.btn').addEventListener('click',ew.buyplane.bind(ew))
+      -bind(null,1,b)
