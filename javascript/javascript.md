@@ -285,9 +285,34 @@ Data Structures, Modern Operators and Strings
       -mehods for func(bcs func obj)
       -obj has book method we copy to new method newBook if called this--undefined
       -book.call(eurroeing(obj this should refer to),a,b(argu of book))
-      -apply takes arr.. now book.call(eurroeing,...[a,b])
+      -apply takes arr..  now bcs destructuring.. book.call(eurroeing,...[a,b])..apply rare used
       -bind doesnt call but returns func const bookEW=book.bind(eurroeing)
       -bind can set param in stone like  const bookEW3=book.bind(eurroeing,3)-- only pass b
       -with event listener (this points to dom el) 
          -document.queryselector('.btn').addEventListener('click',ew.buyplane.bind(ew))
       -bind(null,1,b)
+   Immediately Invoked Function Expressions (IIFE)
+      -use with async/await
+      -(function () {
+         console.log("this will run once");
+                     })();
+      -not a js feature some devs created pattern
+      -after es6 create a { use const let}- for private variables no iffe 
+      -still can be used
+   
+   Closures
+      -not a feature we explicitly use like array or obj.. happens auto..
+      -func has access to variable_environ(VE) of execution context (EC) in which it was created
+      -closure:VE attached to func exactly as it was at the time and place it was created
+      -console.dir(counter)
+      function outer() {
+            let count = 0;
+            return function inner() {
+               count++;
+               console.log(count);
+            };
+            }
+            const counter = outer();
+            counter();
+            counter();
+            console.dir(counter)

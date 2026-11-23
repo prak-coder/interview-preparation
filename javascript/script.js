@@ -478,5 +478,21 @@ const menu = ["egg", "fish", "chicken", "mutton"];
 // }
 // console.log(typeof print);
 
-const greet = (greeting) => (name) => `${greeting} : ${name}`;
-console.log(greet("hello")("troy"));
+// const greet = (greeting) => (name) => `${greeting} : ${name}`;
+// console.log(greet("hello")("troy"));
+// (function () {
+//   console.log("this will run once");
+// })();
+// (() => console.log("this will also run once"))();
+
+function outer() {
+  let count = 0;
+  return function inner() {
+    count++;
+    console.log(count);
+  };
+}
+const counter = outer();
+counter();
+counter();
+console.dir(counter);
