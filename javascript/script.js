@@ -485,14 +485,63 @@ const menu = ["egg", "fish", "chicken", "mutton"];
 // })();
 // (() => console.log("this will also run once"))();
 
-function outer() {
-  let count = 0;
-  return function inner() {
-    count++;
-    console.log(count);
-  };
-}
-const counter = outer();
-counter();
-counter();
-console.dir(counter);
+// function outer() {
+//   let count = 0;
+//   return function inner() {
+//     count++;
+//     console.log(count);
+//   };
+// }
+// const counter = outer();
+// counter();
+// counter();
+// console.dir(counter);
+
+//EX1
+// let f;
+// const a = function () {
+//   let x = 2;
+//   f = function () {
+//     console.log(x * 2);
+//   };
+// };
+
+// const b = function () {
+//   let y = 2;
+//   f = function () {
+//     console.log(y * 3);
+//   };
+// };
+// a();
+// f();
+// console.dir(f);
+// b();
+// f();
+// // console.dir(f);
+
+// const defTimer = function (n, wait) {
+//   const b = n / 3;
+//   setTimeout(function () {
+//     console.log(b);
+//     console.log(wait * b);
+//   }, wait * 1000);
+//   console.log("before timeout");
+// };
+// console.dir(defTimer);
+// defTimer(90, 5);
+const arr = [1, 2, 3];
+console.log(arr.slice(0, 2));
+console.log(arr);
+const b = [...arr];
+console.log();
+console.log(b.map((el) => el * 2).reduce((sum = 0, el) => (sum += el)));
+console.log([...arr].map((el) => el * 2).reduce((sum = 0, el) => (sum += el)));
+
+console.log(
+  arr
+    .slice()
+    .map((el) => el * 2)
+    .reduce((sum = 0, el) => (sum += el)),
+);
+console.log(arr.reverse());
+console.log(arr);

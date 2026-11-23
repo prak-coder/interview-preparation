@@ -267,7 +267,7 @@ Data Structures, Modern Operators and Strings
       -includes(),startswith,endswith
       -split(" "),join('_'),padstart(),padend()
 
- A Closer Look at Functions
+A Closer Look at Functions
 
    default parameters
       -function(a,b=1) 
@@ -316,3 +316,29 @@ Data Structures, Modern Operators and Strings
             counter();
             counter();
             console.dir(counter)
+      //EX1 //-setTimeout()-- also create closures
+            let f;
+            const a = function () {
+            let x = 2;
+            f = function () {
+               console.log(x * 2);
+            };
+            };
+            const b = function () {
+            let y = 2;
+            f = function () {
+               console.log(y * 3);
+            };
+            };
+            a();
+            f();
+            console.dir(f);
+            b();
+            f();
+            console.dir(f);
+working with Array
+   -arr are objs so have methods
+   -slice(0,3)  new array ,slice(-1)-last el,slice() create shallow copy
+   -splice same as slice but mutates arr used to delete last el
+   -reverse() -mutates
+   -concat and join, a1.concat(a2) a.join('-')
