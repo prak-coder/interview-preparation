@@ -1,3 +1,5 @@
+"use strict";
+
 // console.log(typeof 1);
 // console.log(typeof "prak");
 // console.log(typeof NaN);
@@ -403,7 +405,7 @@ console.log("Login successful!");
 // const guests = { numguest: 0 };
 // console.log((noGuest = guests.numguest || 10));
 // console.log((noGuest = guests.numguest ?? 10));
-const menu = ["egg", "fish", "chicken", "mutton"];
+// const menu = ["egg", "fish", "chicken", "mutton"];
 // console.log([...menu.entries()]);
 
 // for (const [i, el] of menu.entries()) {
@@ -529,21 +531,55 @@ const menu = ["egg", "fish", "chicken", "mutton"];
 // };
 // console.dir(defTimer);
 // defTimer(90, 5);
-const arr = [1, 2, 3];
-console.log(arr.slice(0, 2));
-console.log(arr);
-const b = [...arr];
-console.log();
-console.log(b.map((el) => el * 2).reduce((sum = 0, el) => (sum += el)));
-console.log([...arr].map((el) => el * 2).reduce((sum = 0, el) => (sum += el)));
+// const arr = [1, 2, 3];
+// console.log(arr.slice(0, 2));
+// console.log(arr);
+// const b = [...arr];
+// console.log();
+// console.log(b.map((el) => el * 2).reduce((sum = 0, el) => (sum += el)));
+// console.log([...arr].map((el) => el * 2).reduce((sum = 0, el) => (sum += el)));
 
-console.log(
-  arr
-    .slice()
-    .map((el) => el * 2)
-    .reduce((sum = 0, el) => (sum += el)),
-);
-console.log(arr.reverse());
-console.log(arr);
-console.log("5" + 3);
-console.log("5" - 3);
+// console.log(
+//   arr
+//     .slice()
+//     .map((el) => el * 2)
+//     .reduce((sum = 0, el) => (sum += el)),
+// );
+// console.log(arr.reverse());
+// console.log(arr);
+// console.log("5" + 3);
+// // console.log("5" - 3);
+
+// const transfers = [500, 400, 300, -100, 200, -900];
+// // transfers.forEach((transfer, index, arr) => {
+// //   // if(transfer<0) continue;
+// //   console.log(transfer);
+// //   console.log(index);
+// //   console.log(arr);
+// // });
+// for (const transfer of transfers) {
+//   if (transfer < 0) continue;
+//   console.log(transfer);
+//   // console.log(index);
+//   // console.log(arr);
+// }
+
+// const currencies = new Map([
+//   ["usd", "us dollar"],
+//   ["euro", "european union"],
+// ]);
+// console.log(
+//   currencies.forEach((value, key, map) => {
+//     console.log(value);
+//     console.log(key);
+//     console.log(map);
+//   }),
+// );
+// const currenciesUnique = new Set(["usd", "euro", "yen", "euro", "yen"]);
+// currenciesUnique.forEach((value, key, set) => {
+//   console.log(value);
+//   console.log(key);
+//   console.log(set);
+// });
+const numbers = [8, 7, 3, 9, 5, 8, 2, 3, 6];
+console.log(numbers.filter((num) => num % 2 !== 0));

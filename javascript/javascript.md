@@ -336,9 +336,38 @@ A Closer Look at Functions
             b();
             f();
             console.dir(f);
-working with Array
+
+Working with Array
    -arr are objs so have methods
    -slice(0,3)  new array ,slice(-1)-last el,slice() create shallow copy
    -splice same as slice but mutates arr used to delete last el
    -reverse() -mutates
    -concat and join, a1.concat(a2) a.join('-')
+  
+   forEach loop
+      -transfers.forEach((transfer, index, arr) =>{})
+      -no break and continue inside forEach
+      -same for set and map
+      -const currencies = new Map([ ["usd", "us dollar"],  ["euro", "european union"]]);
+      -currencies.forEach((value, key, map) => {})
+      -const currenciesUnique = new Set(["usd", "euro", "yen", "euro", "yen"]);
+      -currenciesUnique.forEach((value, key/_, set) => {});value and  key same bcs unique no index
+   
+   map,filter,reduce data transformation
+      -map new arr after operation on all arr el
+      -filter return new arr of el that passed condition
+      -reduce reduces el to single value 
+      -map((el,i,arr) => {})
+      -map doesnot create side effect (pure)
+            In programming, a side effect happens when a function modifies something outside of its own local scope. Common examples include:
+               • Changing the value of an external variable or mutating the original array.
+               • Logging text to the console (console.log).
+               • Making a network request or saving data to a database.
+               let total = 0;
+               const numbers =;
+               // BAD PRACTICE: Modifying an outside variable ('total') inside map()
+               const doubled = numbers.map(num => {
+               total += num; // <-- This is a side effect!(hard predictablity and debugging)
+               return num * 2;
+               });
+      -filter numbers.filter(num=>(num%2 ===0))
