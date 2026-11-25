@@ -545,3 +545,5 @@ console.log(
 );
 console.log(arr.reverse());
 console.log(arr);
+console.log("5" + 3);
+console.log("5" - 3);
