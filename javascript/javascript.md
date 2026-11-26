@@ -371,3 +371,12 @@ Working with Array
                return num * 2;
                });
       -filter numbers.filter(num=>(num%2 ===0))
+      -reduce numbers.reduce((acc,el,i,arr) => {},0) 0=acc initial value,first el is acc def val 
+      -arr.map.filter.reduce chain methods but ony if it returns an arr
+      -dont overuse chaining affect performance
+      -bad practice to use reverse/slice in chaining..
+
+   find,findIndex,some,every
+      -find returns first el statisfy condition.. filter return all el and new arr
+         -find a tour by id 
+         

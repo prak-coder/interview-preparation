@@ -581,5 +581,21 @@ console.log("Login successful!");
 //   console.log(key);
 //   console.log(set);
 // });
-const numbers = [8, 7, 3, 9, 5, 8, 2, 3, 6];
-console.log(numbers.filter((num) => num % 2 !== 0));
+// console.log(numbers.filter((num) => num % 2 !== 0));
+// (console.log(
+//   numbers.reduce((acc, el, i, arr) => {
+//     console.log(acc);
+//     console.log(el);
+//     console.log(i);
+//     console.log(arr);
+//     return acc + el;
+//   }),
+// ),
+//   0);
+const numbers = [0, 0, 3, 9, 5, 8, 2, 3, 6];
+
+// const max = numbers.reduce((acc, el) => (acc < el ? el : acc), numbers[0]);
+
+// console.log(numbers.reduce((acc, el) => (acc < el ? el : acc)));
+// console.log(numbers.reduce((acc, el) => (acc < el ? acc : el)));
+console.log(numbers.find((num) => num % 2 === 0));
