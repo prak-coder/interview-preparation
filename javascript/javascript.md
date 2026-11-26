@@ -23,7 +23,7 @@ JavaScript Revision
     - Truthy and Falsy Values uneon undefined,null,'',0,NaN
     -'==' type coercion vs '===' data type check
     -JavaScript was originally built to run exclusively inside web browsers. If the core  JavaScript  language had native file system I/O capabilities (like Python's open()), visiting a malicious website could allow the site's script to read your private files, delete your operating system, or access your webcam without permission.
-   -v8 spidermonkey engines follow ecmascript blind no I/O. browser and node are envi provide apis
+   -v8 spidermonkey engines follow ecmascript blind no I/O. browser and node are envi provide apis,ecmascript just spec js imple changes acc to env  eg.sort() v8-timsort spidermonkey mergesort
     for fs,http and dom.. also they manage Event Loop, Task Queue, and Microtask Queue to handle asynchronous code like setTimeout or fs.readFile.
    -js revision let const var are hoisted,var a is intialized with undefined ReferenceError is a subclass of Error.
    -switch no break execute next case. default when all cases fail
@@ -378,12 +378,13 @@ Working with Array
 
    find,findIndex,some,every
       -find returns first el statisfy condition.. filter return all el and new arr
-         -find a tour by id 
+         -find a tour by id return undefined no match
       -findIndex returns the index.. both find and findIndex have index and arr access in cb
+       return -1 no match
       -includes test for equality.. return boolean
       -some uses condition.. positive number or num >500
-      -every if all el satisfy condition
-      -flat(level) default 1.. flatten arr no mutation
+      -every if all el satisfy condition..console.log([].every(x => x > 0)) -- true
+      -flat(level) default 1.. flatten arr no mutation...flat(Infinity)..everylevel
       -flatMap(mapcallback).. returns  flatten arr but one level only 
       -sort() mutates arr.. convert to string and do sorting sort((a,b) =>a-b ) ascending b-a desc num.slice().sort().. to use copy
 
@@ -392,3 +393,10 @@ Working with Array
       -fill mutates arr fill(3) fill(3,inital,end)
       -Array.from const naturalTen = Array.from({ length: 10 }, (_, i) => i + 1);(curr,i) '_'throw value
       -queryselectorAll returns nodelist use .from to conv to arr 
+   
+   es2023 new arr methods
+       Mutating	Non-mutating
+       sort()	   toSorted() same a-b/b-a for numbers
+       reverse()	toReversed()
+       splice()	toSpliced()
+       arr[i] = x with(i, x) if no i RangeError

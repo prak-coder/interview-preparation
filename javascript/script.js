@@ -606,7 +606,7 @@ console.log("Login successful!");
 //   }),
 // );
 // console.log(numbers.includes(25));
-const numbers = [1, 3, 9, [5, 7], [[7, 8], 2]].flat(2);
+// const numbers = [1, 3, 9, [5, 7], [[7, 8], 2]].flat(2);
 
 // console.log(numbers.some((num) => num % 2 === 1));
 // console.log(numbers.every((num) => num % 2 === 1));
@@ -626,12 +626,17 @@ const numbers = [1, 3, 9, [5, 7], [[7, 8], 2]].flat(2);
 // console.log(naturalTen);
 // console.log(document.querySelectorAll(".btn").map((el) => console.log(el)));
 
-const btnArr = Array.from(document.querySelectorAll(".btn"));
+// const btnArr = Array.from(document.querySelectorAll(".btn"));
 
-console.log(
-  btnArr.forEach((el) =>
-    el.addEventListener("click", (e) => {
-      console.log(e.currentTarget.textContent);
-    }),
-  ),
-);
+// console.log(
+//   btnArr.forEach((el) =>
+//     el.addEventListener("click", (e) => {
+//       console.log(e.currentTarget.textContent);
+//     }),
+//   ),
+// );
+const numbers = [1, 3, 9];
+// numbers[10] = 25;
+// console.log(numbers);
+numbers.with(10, 25);
+console.log(numbers);
