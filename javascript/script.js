@@ -592,10 +592,46 @@ console.log("Login successful!");
 //   }),
 // ),
 //   0);
-const numbers = [0, 0, 3, 9, 5, 8, 2, 3, 6];
 
 // const max = numbers.reduce((acc, el) => (acc < el ? el : acc), numbers[0]);
 
 // console.log(numbers.reduce((acc, el) => (acc < el ? el : acc)));
 // console.log(numbers.reduce((acc, el) => (acc < el ? acc : el)));
-console.log(numbers.find((num) => num % 2 === 0));
+// console.log(
+//   numbers.find((num, index, arr) => {
+//     console.log(num);
+//     console.log(index);
+//     console.log(arr);
+//     num % 2 === 0;
+//   }),
+// );
+// console.log(numbers.includes(25));
+const numbers = [1, 3, 9, [5, 7], [[7, 8], 2]].flat(2);
+
+// console.log(numbers.some((num) => num % 2 === 1));
+// console.log(numbers.every((num) => num % 2 === 1));
+// console.log(numbers.flat());
+// console.log(numbers.flat(2));
+// console.log(numbers.flat(2).map((n) => n * 2));
+// console.log(numbers.flat(2).flatMap((n) => n * 2));
+// console.log(numbers);
+// console.log(numbers.slice().sort((a, b) => a - b));
+// console.log(numbers.slice().sort((a, b) => b - a));
+
+// console.log(numbers);
+// const x = new Array(3);
+// console.log(x.fill(3));
+// console.log(x.fill(5, 0, 2));
+// const naturalTen = Array.from({ length: 10 }, (_, i) => i + 1);
+// console.log(naturalTen);
+// console.log(document.querySelectorAll(".btn").map((el) => console.log(el)));
+
+const btnArr = Array.from(document.querySelectorAll(".btn"));
+
+console.log(
+  btnArr.forEach((el) =>
+    el.addEventListener("click", (e) => {
+      console.log(e.currentTarget.textContent);
+    }),
+  ),
+);

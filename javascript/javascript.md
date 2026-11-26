@@ -379,4 +379,16 @@ Working with Array
    find,findIndex,some,every
       -find returns first el statisfy condition.. filter return all el and new arr
          -find a tour by id 
-         
+      -findIndex returns the index.. both find and findIndex have index and arr access in cb
+      -includes test for equality.. return boolean
+      -some uses condition.. positive number or num >500
+      -every if all el satisfy condition
+      -flat(level) default 1.. flatten arr no mutation
+      -flatMap(mapcallback).. returns  flatten arr but one level only 
+      -sort() mutates arr.. convert to string and do sorting sort((a,b) =>a-b ) ascending b-a desc num.slice().sort().. to use copy
+
+   programatically create array
+      const x= new Array(2) empty arry with length 2
+      -fill mutates arr fill(3) fill(3,inital,end)
+      -Array.from const naturalTen = Array.from({ length: 10 }, (_, i) => i + 1);(curr,i) '_'throw value
+      -queryselectorAll returns nodelist use .from to conv to arr 
