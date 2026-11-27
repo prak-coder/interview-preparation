@@ -31,7 +31,7 @@ JavaScript Revision
       2.microtask(promise)[if creates another micro it runs]
       3.one macro (settimeout)
       4.Repeat: Check the Microtask Queue again (and empty it), render UI updates (in browsers), then grab the next Macrotask
-      
+
    -js revision let const var are hoisted,var a is intialized with undefined ReferenceError is a subclass of Error.
    -switch no break execute next case. default when all cases fail
    -expression produce value statement is if,switch.. `{expression}`
@@ -288,8 +288,9 @@ A Closer Look at Functions
       -func are type of object.. have func methods like bind,call etc
       -High Order func -accepts func || returns func || both(called so bcs higher level of abstraction)
       -func return func greet('hello')('troy')
+
    call,apply,bind
-      -mehods for func(bcs func obj)
+      -methods for func(bcs func obj)
       -obj has book method we copy to new method newBook if called this--undefined
       -book.call(eurroeing(obj this should refer to),a,b(argu of book))
       -apply takes arr..  now bcs destructuring.. book.call(eurroeing,...[a,b])..apply rare used
@@ -298,6 +299,7 @@ A Closer Look at Functions
       -with event listener (this points to dom el) 
          -document.queryselector('.btn').addEventListener('click',ew.buyplane.bind(ew))
       -bind(null,1,b)
+
    Immediately Invoked Function Expressions (IIFE)
       -use with async/await
       -(function () {
@@ -412,3 +414,17 @@ Working with Array
        arr[i] = x with(i, x) if no i RangeError
 
 Numbers, Dates, Intl and Timers
+   Numbers
+      -numbers all floting point(2 ===2.0).. base 2(0 1) (.1 diff like .333 in base 10)(.1+.2-.3000..4)
+      -Number('33').. +'33' Number.parseInt('30px',10) parseFloat('2.5rem') isNaN() isfinite() to check number or not isInteger()
+      -Math.sqrt ** 2**2 = 4 math.max(1,8,9) 9.. min math.PI
+      -.random * 6 .trunc -integer .round nearest num use .floor
+      -3.5tofixed(3)-3.500.. % oper remainder
+      -bigInt js represent 64 console.log(2**53-1); BigInt() typeof 56n->bigint
+   
+   date and time 
+      -create date 1.const now = new Date() -ostime 
+      -2.new date('mar 14 1932') is obj has methods .getFullyear .getmonth month 0-based
+      .isoString() also setFullyear()
+      -
+

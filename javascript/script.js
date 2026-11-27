@@ -642,11 +642,19 @@ console.log("Login successful!");
 // numbers.with(10, 25);
 // console.log(numbers);
 
-const a = [1, 2, 3];
-const b = [1, 2, 3];
+// const a = [1, 2, 3];
+// const b = [1, 2, 3];
 
-console.log(a === b);
-const isEqualarr = function (a, b) {
-  return a.length === b.length && a.every((el, i) => el === b[i]);
-};
-console.log(isEqualarr(a, b));
+// console.log(a === b);
+// const isEqualarr = function (a, b) {
+//   return a.length === b.length && a.every((el, i) => el === b[i]);
+// };
+// console.log(isEqualarr(a, b));
+// console.log(Number.MAX_SAFE_INTEGER + 100);
+// console.log(Number.MIN_SAFE_INTEGER);
+// console.log(48462626666666666662147141414n);
+// console.log(typeof 56n);
+
+const now = new Date();
+console.log(now);
+console.log(dayjs);
