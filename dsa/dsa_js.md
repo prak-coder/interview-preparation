@@ -43,30 +43,38 @@ Analysing performance of Array and Objects (js)
 
 Problem solving approach and pattern
 
- algorithm 
+   algorithm 
    a process or set of steps to accomplish a task 
    
--understand the problem 
-   -restate in own words   
-   -input ?? output 
-   -can output from input 
-   -how to label pieces of data
-explore concrete examples
-   -start simple
-   -more complexity
-   -empty input 
-   -invalid inputs 
-   -edge cases
-break it down
-  -write steps like 
-  create obj to return 
-  -loop 
-  -return obj 
-solve/simplfy
-  -dont know how to leave non alpha numeric leave 
-  -implement what u know
-look back and refactor
-
+      -understand the problem 
+      -restate in own words   
+      -input ?? output 
+      -can output from input 
+      -how to label pieces of data
+   explore concrete examples
+      -start simple
+      -more complexity
+      -empty input 
+      -invalid inputs 
+      -edge cases
+   break it down
+   -write steps like 
+   create obj to return 
+   -loop 
+   -return obj 
+   solve/simplfy
+   -dont know how to leave non alpha numeric leave 
+   -implement what u know
+   look back and refactor
+Problem solving pattern
+      -some are official some not eg freq counter/greedy algo 
+   Frequency counters
+      -this pattern uses objs or sets to colect frq of values
+      -same(arr1,arr2) same length and same values squared order not necess 
+      -use 2 loops for loop and indexof(loop) O(n2)
+      -2 obj called freq 2 loop and 1 loop to check condition O(3n)-->O(n)
+   
+   multiple pointer pattern
 
 Data Structures 
 -ds are collections of values,have relationship among them,functions/operation that can be applied to the data eg array values-order-push pop reverse methods
