@@ -25,6 +25,13 @@ JavaScript Revision
     -JavaScript was originally built to run exclusively inside web browsers. If the core  JavaScript  language had native file system I/O capabilities (like Python's open()), visiting a malicious website could allow the site's script to read your private files, delete your operating system, or access your webcam without permission.
    -v8 spidermonkey engines follow ecmascript blind no I/O. browser and node are envi provide apis,ecmascript just spec js imple changes acc to env  eg.sort() v8-timsort spidermonkey mergesort
     for fs,http and dom.. also they manage Event Loop, Task Queue, and Microtask Queue to handle asynchronous code like setTimeout or fs.readFile.
+    -closures and eventloop are internal mechanism we cant control
+      eventloop--
+      1.call stack(all sync code)
+      2.microtask(promise)[if creates another micro it runs]
+      3.one macro (settimeout)
+      4.Repeat: Check the Microtask Queue again (and empty it), render UI updates (in browsers), then grab the next Macrotask
+      
    -js revision let const var are hoisted,var a is intialized with undefined ReferenceError is a subclass of Error.
    -switch no break execute next case. default when all cases fail
    -expression produce value statement is if,switch.. `{expression}`
@@ -387,6 +394,9 @@ Working with Array
       -flat(level) default 1.. flatten arr no mutation...flat(Infinity)..everylevel
       -flatMap(mapcallback).. returns  flatten arr but one level only 
       -sort() mutates arr.. convert to string and do sorting sort((a,b) =>a-b ) ascending b-a desc num.slice().sort().. to use copy
+      -const isEqualarr = function (a, b) {
+       return a.length === b.length && a.every((el, i) => el === b[i]);
+       };
 
    programatically create array
       const x= new Array(2) empty arry with length 2
@@ -400,3 +410,5 @@ Working with Array
        reverse()	toReversed()
        splice()	toSpliced()
        arr[i] = x with(i, x) if no i RangeError
+
+Numbers, Dates, Intl and Timers

@@ -627,6 +627,7 @@ console.log("Login successful!");
 // console.log(document.querySelectorAll(".btn").map((el) => console.log(el)));
 
 // const btnArr = Array.from(document.querySelectorAll(".btn"));
+// const btnArr = [...document.querySelectorAll(".btn")];
 
 // console.log(
 //   btnArr.forEach((el) =>
@@ -635,8 +636,17 @@ console.log("Login successful!");
 //     }),
 //   ),
 // );
-const numbers = [1, 3, 9];
-// numbers[10] = 25;
+// const numbers = [1, 3, 9];
+// // numbers[10] = 25;
+// // console.log(numbers);
+// numbers.with(10, 25);
 // console.log(numbers);
-numbers.with(10, 25);
-console.log(numbers);
+
+const a = [1, 2, 3];
+const b = [1, 2, 3];
+
+console.log(a === b);
+const isEqualarr = function (a, b) {
+  return a.length === b.length && a.every((el, i) => el === b[i]);
+};
+console.log(isEqualarr(a, b));
