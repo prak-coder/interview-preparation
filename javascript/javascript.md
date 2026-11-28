@@ -432,3 +432,6 @@ Numbers, Dates, Intl and Timers
       namespace:toolbox Intl,Math constructor:tool Date,Array
       -Capitalized name + typeof === "object" (Math, JSON, Intl, Reflect, Atomics) → Toolbox (Namespace)
       -Capitalized name + typeof === "function" (Date, Array, Object, Promise, Symbol, Map, Set) → Tool (Constructor / Factory)
+      -const timerID = setTimeout(callback,timemillsec,argumentstocallback)  clearTimeout(timerID);
+      const intervalID = setInterval(callback,timemillsec,argumentstocallback)  clearInterval(timerID);
+      

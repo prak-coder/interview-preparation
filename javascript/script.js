@@ -671,7 +671,7 @@ console.log("Login successful!");
 // console.log(loacle);
 // console.log(new Intl.DateTimeFormat(loacle, options).format(now));
 
-const num = 3500000.0;
+/*const num = 3500000.0;
 console.log(
   "US :",
   new Intl.NumberFormat("en-US", { style: "currency", currency: "USD" }).format(
@@ -690,4 +690,16 @@ console.log(
     num,
   ),
 );
-console.log(globalThis);
+console.log(globalThis);*/
+const id = setInterval(
+  function (x) {
+    const start = new Date();
+    console.log(
+      `${start.getHours()}:${start.getMinutes()}:${start.getSeconds()}`,
+    );
+    console.log(x);
+  },
+  1000,
+  5,
+);
+clearTimeout;
