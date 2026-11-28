@@ -426,5 +426,9 @@ Numbers, Dates, Intl and Timers
       -create date 1.const now = new Date() -ostime 
       -2.new date('mar 14 1932') is obj has methods .getFullyear .getmonth month 0-based
       .isoString() also setFullyear()
-      -
-
+      -Intl namespace obj..provide lang sensitive string comparison date time format 
+      -const deutschNow = new Intl.DateTimeFormat("de-DE",options).format(now);
+      -console.log("India :", new Intl.NumberFormat("en-IN",{style:'unit',unit:'kilogram'/currency}).format(num));
+      namespace:toolbox Intl,Math constructor:tool Date,Array
+      -Capitalized name + typeof === "object" (Math, JSON, Intl, Reflect, Atomics) → Toolbox (Namespace)
+      -Capitalized name + typeof === "function" (Date, Array, Object, Promise, Symbol, Map, Set) → Tool (Constructor / Factory)

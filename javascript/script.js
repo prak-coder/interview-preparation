@@ -655,6 +655,39 @@ console.log("Login successful!");
 // console.log(48462626666666666662147141414n);
 // console.log(typeof 56n);
 
-const now = new Date();
-console.log(now);
-console.log(dayjs);
+// const now = new Date();
+// const options = {
+//   year: "numeric",
+//   month: "long",
+//   day: "numeric",
+//   hour: "numeric",
+//   minute: "numeric",
+// };
+// const loacle = navigator.language;
+// const usNow = new Intl.DateTimeFormat("en-US", options).format(now);
+// const deutschNow = new Intl.DateTimeFormat("de-DE", options).format(now);
+// console.log(now);
+// console.log(usNow, deutschNow);
+// console.log(loacle);
+// console.log(new Intl.DateTimeFormat(loacle, options).format(now));
+
+const num = 3500000.0;
+console.log(
+  "US :",
+  new Intl.NumberFormat("en-US", { style: "currency", currency: "USD" }).format(
+    num,
+  ),
+);
+console.log(
+  "deutschLand :",
+  new Intl.NumberFormat("de-DE", { style: "currency", currency: "EUR" }).format(
+    num,
+  ),
+);
+console.log(
+  "India :",
+  new Intl.NumberFormat("en-IN", { style: "currency", currency: "INR" }).format(
+    num,
+  ),
+);
+console.log(globalThis);
